@@ -1,0 +1,61 @@
+.label {
+  font-weight: bold;}
+
+.create-update-form {
+  padding: 20px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+
+.mainBody{
+	text-align: center;
+	background-color: #FFA333;
+	border-color: black;
+  margin: 0px;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+img{
+	width: 200px;
+	height: 300px;
+}
+
+#unDevour{
+  font-size: 20px;
+}
+
+#devoured{
+  font-size: 20px;
+
+}
+
+.devourButton{
+  
+margin: 8px;
+
+}
+
+
+.devoured{
+margin: 18px;
+color: grey;
+
+
+}
+
+
+.burger{
+
+margin: 20px;
+
+
+}

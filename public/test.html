@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title> Eat-Da-Burger </title>
+
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="assets/css/burger_style.css">
+
+</head>
+
+<body class="container">
+
+<img src="assets/img/hamburger.png">
+
+<p> Eat-Da-Burger</p>
+
+<div class="row">
+	<div id="unDevour" class="container col-md-3 col-md-offset-2">
+		<ul>
+			{{#each burgers}}
+				{{#unless this.devoured}}
+					<li>
+						{{this.burger_name}}
+					</li>
+				{{/unless}}
+			{{/each}}
+		</ul>
+
+	</div>
+
+	<div id="devourButton" class="container col-md-2">
+			{{#each burgers}}
+				{{#unless this.devoured}}
+					<li>
+						<form action="/{{this.id}}?_method=PUT" method="POST">
+							<button type="submit"> Devour it!</button>
+						</form>
+					</li>
+				{{/unless}}
+			{{/each}}
+	</div>
+
+	<div id="devoured" class="container col-md-3">
+	</div>
+</div>
+
+
+
+
+</body>
+
+
+
+
+</html>
